@@ -1,9 +1,7 @@
 import { redirect } from "next/navigation";
 
-import { fetchCommunityPosts } from "@/lib/actions/community.actions";
 
 
-import ThreadCard from "../cards/ThreadCard";
 
 interface Result {
   name: string;
@@ -42,7 +40,7 @@ async function ThreadsTab({ currentUserId, accountId, accountType }: Props) {
   let result: Result;
 
   if (accountType === "Community") {
-    result = await fetchCommunityPosts(accountId);
+    
   } else {
    
   }
