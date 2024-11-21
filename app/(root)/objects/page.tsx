@@ -1,5 +1,5 @@
 import React from 'react'
-import FileUpload from "@/components/shared/FileUpload";
+import FileUploadObj from "@/components/shared/FileUploadObj";
 
 
 
@@ -14,10 +14,14 @@ function page() {
 
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-gray-100">
-      <h1 className="mb-6 text-2xl font-bold">File Upload Component</h1>
-      <FileUpload onUpload={handleFileUpload} accept="image/*" multiple />
+    <>
+    <h1 className="mb-6 text-2xl font-bold">File Upload Component</h1>
+    
+    <div className="bg-[#121417] flex min-h-screen flex-col items-center justify-cente">
+    
+      <FileUploadObj/>
     </div>
+    </>
   )
 }
 
