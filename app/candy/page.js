@@ -11,7 +11,7 @@ const CandyGamePage = () => {
     const getAudioPermission = async () => {
       try {
         // Check if the browser supports the Web Audio API
-        if (window.AudioContext || window.webkitAudioContext) {
+        if (window?.AudioContext || window?.webkitAudioContext) {
           // Request permission to play sound
           await new AudioContext().resume();
           setPermissionGranted(true);
